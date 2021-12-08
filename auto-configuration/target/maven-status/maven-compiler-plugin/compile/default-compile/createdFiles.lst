@@ -1,0 +1,11 @@
+com\demo\db\HsqlAutoConfig.class
+com\demo\firestore\local\LocalFileStore.class
+com\demo\java\java17\Java17EnvInfo.class
+com\demo\firestore\network\NetWorkFileStoreAutoConfig.class
+com\demo\firestore\local\LocalFileStoreAutoConfig.class
+com\demo\firestore\FileStore.class
+com\demo\firestore\network\NetWorkFileStore.class
+com\demo\java\java11\Java11AutoConfig.class
+com\demo\java\java11\Java11EnvInfo.class
+com\demo\java\JavaEnvInfo.class
+com\demo\java\java17\Java17AutoConfig.class
