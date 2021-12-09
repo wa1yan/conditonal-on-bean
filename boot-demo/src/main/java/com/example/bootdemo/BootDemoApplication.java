@@ -10,14 +10,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class BootDemoApplication implements CommandLineRunner {
 
-    @Autowired
+    @Autowired(required = true)
     private JavaEnvInfo javaEnvInfo;
+
+    @Autowired
+    private EmployeeService employeeService;
 
     @Autowired
    private FileStore fileStore;
 
-    @Autowired
-    private EmployeeService employeeService;
 
     public static void main(String[] args) {
         SpringApplication.run(BootDemoApplication.class, args);
@@ -25,7 +26,7 @@ public class BootDemoApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-       // javaEnvInfo.printJvmEnvInfo();
+        javaEnvInfo.printJvmEnvInfo();
         fileStore.printFileStoreInfo();
 
         employeeService.printEmail();

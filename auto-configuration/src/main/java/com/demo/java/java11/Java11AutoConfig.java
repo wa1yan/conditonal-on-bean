@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ConditionalOnJava(value = JavaVersion.ELEVEN,range = ConditionalOnJava.Range.OLDER_THAN)
+@ConditionalOnJava(value = JavaVersion.ELEVEN)
 public class Java11AutoConfig {
 
     @Bean

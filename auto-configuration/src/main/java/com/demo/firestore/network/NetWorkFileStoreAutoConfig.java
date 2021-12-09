@@ -12,7 +12,7 @@ public class NetWorkFileStoreAutoConfig {
 
     @Bean
     public FileStore fileStore(){
-        return new LocalFileStore();
+        return new NetWorkFileStore();
     }
 }
 
